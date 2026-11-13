@@ -131,7 +131,7 @@ function App() {
 
               <a
   className="button button-secondary"
-  href="/resume.pdf"
+ href={`${import.meta.env.BASE_URL}resume.pdf`}
   download="Snehal_Shelar_Resume.pdf"
 >
   <Download size={16} />
@@ -199,7 +199,7 @@ function App() {
             <div className="portrait-glow" />
 <img
   className="portrait"
-  src="/images/snehal-portrait.jpeg"
+ src={`${import.meta.env.BASE_URL}images/snehal-portrait.jpeg`}
   alt="Portrait of Snehal Shelar"
   onError={(e) => {
     e.currentTarget.style.display = 'none'
@@ -384,17 +384,17 @@ function App() {
   >
     {[
       {
-        image: '/images/gallery/design-1.png',
+       image: `${import.meta.env.BASE_URL}images/gallery/design-1.png`,
         title: 'Visual Design',
         category: 'CANVA / GRAPHIC DESIGN',
       },
       {
-        image: '/images/gallery/design-2.png',
+       image: `${import.meta.env.BASE_URL}images/gallery/design-2.png`,
         title: 'Interface Exploration',
         category: 'UI / UX DESIGN',
       },
       {
-        image: '/images/gallery/design-3.png',
+       image: `${import.meta.env.BASE_URL}images/gallery/design-3.png`,
         title: 'Creative Work',
         category: 'POSTERS / COMPOSITIONS',
       },
